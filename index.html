@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas Culinárias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Receitas Culinárias</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Página Inicial</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="search-section">
+    <h2>Encontre sua receita favorita</h2>
+    <input type="text" id="searchInput" placeholder="Pesquise por nome da receita..." oninput="searchRecipe()">
+    <select id="filterType" onchange="filterRecipes()">
+      <option value="">Filtrar por tipo</option>
+      <option value="entrada">Entrada</option>
+      <option value="prato_principal">Prato Principal</option>
+      <option value="sobremesa">Sobremesa</option>
+    </select>
+  </section>
+
+  <section class="recipes-list">
+    <div class="recipe-item" data-type="prato_principal">
+      <h3><a href="recipe-detail.html">Bife à Parmegiana</a></h3>
+      <p>Tempo de preparo: 45 min</p>
+    </div>
+    <div class="recipe-item" data-type="sobremesa">
+      <h3><a href="recipe-detail.html">Pudim de Leite Condensado</a></h3>
+      <p>Tempo de preparo: 60 min</p>
+    </div>
+    <!-- Mais receitas aqui -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Receitas Culinárias. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
