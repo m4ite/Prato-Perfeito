@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Adicionar Receita</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__container">
+          <span class="navbar__logo">🍽️ Prato Perfeito</span>
+          <ul class="navbar__links">
+            <li class="navbar__link"><a href="allRecipes.html">Início</a></li>
+            <li class="navbar__link"><a href="newRecipe.html">Nova Receita</a></li>
+            <li class="navbar__link"><a href="index.html">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="card-formulario animate-fade-in">
+          <h2 class="card-formulario__titulo">Cadastrar Receita</h2>
+          <form class="formulario" id="form-receita">
+            <label for="nome" class="visually-hidden">Nome da Receita</label>
+            <input
+              type="text"
+              placeholder="Nome da Receita"
+              class="formulario__campo"
+              id="nome"
+            />
+
+            <label for="categoria" class="visually-hidden">Categoria</label>
+            <select class="formulario__campo" id="categoria">
+              <option disabled selected>Selecione uma categoria</option>
+              <option>Entrada</option>
+              <option>Prato principal</option>
+              <option>Sobremesa</option>
+              <option>Lanche</option>
+            </select>
+
+            <!-- Ingredientes -->
+            <div class="ingredientes">
+              <label class="ingredientes__label">Ingredientes:</label>
+              <div class="ingredientes__adicao">
+                <label for="novo-ingrediente" class="visually-hidden">Novo ingrediente</label>
+                <input
+                  type="text"
+                  id="novo-ingrediente"
+                  class="formulario__campo"
+                  placeholder="ex: 1 xícara de trigo"
+                />
+                <button
+                  type="button"
+                  id="btn-adicionar"
+                  class="botao botao--secundario"
+                  onclick="adicionarIngrediente(event)"
+                >
+                  Adicionar
+                </button>
+              </div>
+              <ul id="lista-ingredientes" class="ingredientes__lista" aria-label="Lista de ingredientes adicionados"></ul>
+            </div>
+
+            <!-- Preparo -->
+            <label for="preparo" class="visually-hidden">Modo de Preparo</label>
+            <textarea
+              placeholder="Modo de Preparo"
+              class="formulario__campo formulario__textarea"
+              rows="6"
+              id="preparo"
+            ></textarea>
+
+            <label for="tempo" class="visually-hidden">Tempo de preparo</label>
+            <input
+              type="text"
+              placeholder="Tempo de preparo (ex: 45 minutos)"
+              class="formulario__campo"
+              id="tempo"
+            />
+
+            <label for="rendimento" class="visually-hidden">Rendimento</label>
+            <input
+              type="text"
+              placeholder="Rendimento (ex: 4 porções)"
+              class="formulario__campo"
+              id="rendimento"
+            />
+
+            <button class="botao" onclick="newRecipe(event)">Salvar Receita</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
