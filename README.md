@@ -42,10 +42,9 @@ This project was developed in collaboration with two other GitHub users:
 <a name="features"></a>
 ## ✅ Features
 - Registering recipes with name, description, ingredients, and preparation method
-- Editing and deleting recipes
-- Local storage using LocalStorage
+- Local storage
 - Responsive and user-friendly interface
-- Filter or search recipes by name
+- Filter by category and search recipes by name
 
 <br><br><br><br>
 
