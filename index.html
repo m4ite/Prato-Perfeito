@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body class="bg-fundo">
+    <header>
+      <h1 class="visually-hidden">Sistema de Receitas - Login</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="card-formulario animate-fade-in">
+          <h2 class="card-formulario__titulo">Bem-vindo de volta!</h2>
+          <form class="formulario">
+            <label for="email" class="visually-hidden">Email</label>
+            <input type="email" placeholder="Email" class="formulario__campo" id="email" required/>
+
+            <label for="senha" class="visually-hidden">Senha</label>
+            <input
+              type="password"
+              placeholder="Senha"
+              class="formulario__campo"
+              id="senha"
+              required
+            />
+
+            <button class="botao" onclick="login(event)" type="submit">
+              Entrar
+            </button>
+          </form>
+
+          <p class="link-extra">
+            Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
