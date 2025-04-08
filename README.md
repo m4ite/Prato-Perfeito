@@ -25,7 +25,7 @@ This project was developed in collaboration with two other GitHub users:
 
 <a name="proposal"></a>
 ## 📑 Proposal
-> The recipe website was created as part of an activity for the subject *Frontend Programming* in the **Software Engineering Graduatin Course**. This project implementis features like user registration, recipe submission, ingredient handling, and local data storage.
+> The recipe website was created as part of an activity for the subject *Frontend Programming* in the **Software Engineering Graduation Course**. This project implementis features like user registration, recipe submission, ingredient handling, and local data storage.
 
 <br><br><br><br>
 
